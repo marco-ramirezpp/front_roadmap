@@ -1,0 +1,52 @@
+/* Select by type attribute */ 
+
+input [type='email']{
+    border-color: green;
+}
+
+input[name='name'] {
+    border-color: blue;
+}
+
+/* Select text type and id of name */
+
+input[type='text'] [id='name'] {
+    background: lightblue;
+}
+
+/* Select required inputs */
+
+inputs[required] {
+    border-color: red;
+}
+
+/* Select password with a maxlength of 8 */
+
+input[type='password'][maxlength='8'] {
+    background: green;
+}
+
+/* Select button with type of submit */ 
+
+button[type='submit'] {
+    background: purple;
+}
+
+/* Select only links that have a href attribute starting with # */ 
+
+a[href^='#'] {
+    color: yellow;
+}
+
+/* Select only links that have a href attribute ending with .com */
+a[href$='.com'] {
+    color: lightgreen;
+} 
+
+/* Select only links that have a href attribute containing traversy */
+a[href*='traversy'] {
+    text-decoration: underline;
+}
+
+/* Other pseudoclasses is(), where(), has() */ 
+
