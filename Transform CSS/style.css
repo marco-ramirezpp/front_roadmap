@@ -1,0 +1,40 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    margin: 130px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f4f4;
+    height: 600px;
+}
+
+
+ /*.logo {
+    max-width: 10%;
+    transition: all 0.5s;
+} */
+
+.logo {
+    max-width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Transform function */ 
+
+.logo:hover {
+    transform: translateX(5px);
+    transform: translateY(5px);
+    transform: translate(5px, 5px);
+    transform: skew(30deg);
+    transform: scale(0.5);
+    transform: rotate(90deg) scale(200px);
+}
+
+/* Positioning  */ 
