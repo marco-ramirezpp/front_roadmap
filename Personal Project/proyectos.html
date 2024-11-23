@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Marco Ramírez</title>
+</head>
+<body>
+    <div class="container">
+        <!-----Nav Bar----->
+        <nav class="navbar">
+            <ul class="nav-items">
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">Roadmap</a></li>
+                <li><a href="#">Calendario</a></li>
+                <li><a href="#">To Do</a></li>
+                <li><a href="#">Referencias</a></li>
+                <li><a href="#">Investigación</a></li>
+            </ul>
+        </nav>
+
+        <!----Main Area ---->
+        <main>
+            <!----FIlter section ---->
+            <section class="filters">
+                <select name="filter-dropdown" id="dropdown" class="filter-tecnologias">
+                    <option>Servicios</option>
+                </select>
+                <select name="filter-dropdown" id="dropdown2" class="filter-services">
+                    <option>Tecnologías</option>
+                </select>
+                <div class="search-box">
+                    <input type="text" placeholder="Buscar...">
+                    <button class="search-button">🔍</button>
+                </div>
+                <div class="actions">
+                    <button class="add-button">➕</button>
+                    <button class="edit-button">✏️</button>
+                </div>
+            </section>
+
+            <!-- Cards Section -->
+            <section class="cards">
+                <div class="card">
+                    <h3>Orchestrating workflows with Apache Airflow</h3>
+                    <p>In this project, a workflow with Apache Airflow was built to help address emails to the rest of the company.</p>
+                    <div class="card-icons">
+                        <span>🐙</span>
+                        <span>🟢</span>
+                    </div>
+                </div>
+                <!-- Repeat cards as needed -->
+            </section>
+        </main>
+    </div>
+</body>
+</html>

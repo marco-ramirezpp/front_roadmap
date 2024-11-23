@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Style -->
     <link rel="stylesheet" href="style.css">
     <title>Marco Ramírez</title>
 </head>
@@ -11,12 +14,12 @@
         <!-----Nav Bar----->
         <nav class="navbar">
             <ul class="nav-items">
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Roadmap</a></li>
-                <li><a href="#">Calendario</a></li>
-                <li><a href="#">To Do</a></li>
-                <li><a href="#">Referencias</a></li>
-                <li><a href="#">Investigación</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="roadmap.html">Roadmap</a></li>
+                <li><a href="calendario.html">Calendario</a></li>
+                <li><a href="todo.html">To Do</a></li>
+                <li><a href="referencias.html">Referencias</a></li>
+                <li><a href="investigacion.html">Investigación</a></li>
             </ul>
         </nav>
 
@@ -31,7 +34,7 @@
                     <option>Tecnologías</option>
                 </select>
                 <div class="search-box">
-                    <input type="text" placeholder="Buscar...">
+                    <input type="text" class="search-box1" placeholder="Buscar...">
                     <button class="search-button">🔍</button>
                 </div>
                 <div class="actions">
@@ -42,16 +45,28 @@
 
             <!-- Cards Section -->
             <section class="cards">
+                <!---Card 1--->
                 <div class="card">
-                    <h3>Orchestrating workflows with Apache Airflow</h3>
-                    <p>In this project, a workflow with Apache Airflow was built to help address emails to the rest of the company.</p>
-                    <div class="card-icons">
-                        <span>🐙</span>
-                        <span>🟢</span>
+                    <img src="airflow.png" alt="airflow project" class="card-img">
+
+                    <div class="card-description">
+                        <h3>Orchestrating workflows with Apache Airflow</h3>
+                        <p>In this project, a workflow with Apache Airflow was built to help address emails to the rest of the company.</p>
                     </div>
                 </div>
-                <!-- Repeat cards as needed -->
+
+                <!---Card 2--->
+                <div class="card">
+                    <img src="airflow.png" alt="airflow project" class="card-img">
+
+                    <div class="card-description">
+                        <h3>Orchestrating workflows with Apache Airflow</h3>
+                        <p>In this project, a workflow with Apache Airflow was built to help address emails to the rest of the company.</p>
+                    </div>
+                </div>                
+
             </section>
+
         </main>
     </div>
 </body>
