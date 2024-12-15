@@ -1,26 +1,33 @@
-import { FaTimes } from 'react-icons/fa'
-import PropTypes from 'prop-types'
-import {useState} from 'react'
-import Card from './shared/Card'
+import { useContext } from 'react'
+import FeedbackItem from './FeedbackItem'
+import Spinner from './shared/Spinner'
+import FeedbackContext from '../context/FeedbackContext'
 
-function FeedbackItem({ item, handleDelete }) {
-  const handleClick = (id) => {
-    console.log(id)
+
+function FeedbackList() {
+  const { feedback, isLoading } = useContext(FeedbackContext)
+
+  if (!isLoading && (!feedback || feedback.length === 0)) {
+    return <p>No Feedback Yet</p>
   }
 
-  return (
-    <Card>
-      <div className="num-display">{item.rating}</div>
-      <button onClick={() => handleDelete(item.id)} className="close">
-        <FaTimes color = 'purple'/>
-      </button>
-      <div className="text-display">{item.text}</div>
-    </Card>
+  return isLoading ? (
+    <Spinner />
+  ) : (
+    <div className='feedback-list'>
+        {feedback.map((item) => (
+            <FeedbackItem key={item.id} item={item} />
+        ))}
+    </div>
   )
+
+  // return (
+  //   <div className='feedback-list'>
+  //     {feedback.map((item) => (
+  //       <FeedbackItem key={item.id} item={item} handleDelete={handleDelete} />
+  //     ))}
+  //   </div>
+  // )
 }
 
-FeedbackItem.propTypes = {
-  item: PropTypes.object.isRequired,
-}
-
-export default FeedbackItem
+export default FeedbackList
